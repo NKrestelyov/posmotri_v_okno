@@ -75,7 +75,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 30px;
   width: 399px;
   height: 318px;
   overflow-y: scroll;
