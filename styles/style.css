@@ -10,6 +10,7 @@ html {
 
 .page {
   inline-size: 1200px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -52,7 +53,7 @@ ol {
   display: flex;
   min-width: 1140px;
   min-height: 534px;
-  padding: 133px 30px;
+  padding: 133px 0px 0px 30px;
   gap: 30px;
 }
 
