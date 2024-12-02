@@ -51,8 +51,8 @@ ol {
 
 .content {
   display: flex;
-  width: 1140px;
-  height: 534px;
+  min-width: 1140px;
+  min-height: 534px;
   padding: 133px 30px;
   gap: 30px;
 }
@@ -125,6 +125,7 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
+  padding-top: 78px;
 }
 
 .content__details {
@@ -136,7 +137,6 @@ ol {
   display: flex;
   width: 711px;
   height: 386px;
-  margin-top: 78px;
   position: relative;
 }
 
