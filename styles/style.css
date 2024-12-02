@@ -45,7 +45,6 @@ ol {
   font-size: 75px;
   text-transform: uppercase;
   line-height: 70.5px;
-  margin-top: 3px;
 }
 
 .content__accent {
@@ -75,8 +74,8 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
   gap: 30px;
+  padding-top: 30px;
   width: 399px;
   height: 318px;
   overflow-y: scroll;
@@ -155,8 +154,9 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 17px;
+  align-items: end;
   font-family: 'Fira Sans Condensed', sans-serif;
+  margin-top: 16px;
 }
 
 .search-form__fieldset {
@@ -204,7 +204,6 @@ ol {
   border: 1px solid white;
   width: 194px;
   height: 34px;
-  margin-top: 18px;
 }
 
 .more-button {
