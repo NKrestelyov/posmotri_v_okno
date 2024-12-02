@@ -51,9 +51,10 @@ ol {
 
 .content {
   display: flex;
+  padding-top: 211px;
+  padding-left: 30px;
   min-width: 1140px;
   min-height: 534px;
-  padding: 133px 0px 0px 30px;
   gap: 30px;
 }
 
