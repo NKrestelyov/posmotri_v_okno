@@ -53,7 +53,8 @@ ol {
   display: flex;
   width: 1140px;
   height: 534px;
-  margin: 133px 30px;
+  padding-top: 133px;
+  padding-left: 30px;
   gap: 30px;
 }
 
