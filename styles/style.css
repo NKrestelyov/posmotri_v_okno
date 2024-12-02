@@ -42,26 +42,84 @@ ol {
   font-size: 75px;
   text-transform: uppercase;
   line-height: 70.5px;
+  margin-top: 3px;
 }
 
+.content__accent {
+  color: #545050;
+}
 
 .content {
   display: flex;
   width: 1140px;
   height: 534px;
   margin: 133px 30px;
-  gap: 30px
+  gap: 30px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #fff;
 }
 
 .content__list {
   width: 399px;
-  height: 298px;
+  height: 318px;
   overflow-y: scroll;
+  position: relative;
 }
 
 .content__list::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.content__list-item {
+  display: block;
+  margin-top: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  overflow: hidden;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  color: #fff;
+}
+
+.content__video-card:active {
+  background-color: #545050;
 }
 
 .result {
@@ -70,7 +128,8 @@ ol {
 }
 
 .content__details {
-
+  width: 100%;
+  height: 100%;
 }
 
 .result__video-container {
@@ -78,6 +137,7 @@ ol {
   width: 711px;
   height: 386px;
   margin-top: 78px;
+  position: relative;
 }
 
 .result__video {
@@ -90,16 +150,40 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 17px;
   font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__fieldset {
   border: none;
+  width: fit-content;
 }
 
 .search-form__label {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content; 
+  margin-top: 5px;
+  cursor: pointer;
+}
 
+.search-form__textfield {
+  background-color: #1B1919;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  appearance: none;
+  min-width: 225px;
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__fieldset-title {
@@ -109,14 +193,94 @@ ol {
 
 .button {
   font-weight: 700;
+  font-size: 15px;
   background-color: rgb(0, 0, 0, 0);
   color: white;
   border: 1px solid white;
   width: 194px;
   height: 34px;
+  margin-top: 18px;
+}
 
+.more-button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.more-button:active {
+  background-color: #545050;
+}
+
+.more-button:hover {
+  text-decoration: underline;
+}
+
+.more-button:focus-visible {
+  outline: 1px #fff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
+  cursor: pointer;
+}
 
+.search-form__submit-button:active {
+  background-color: #545050;
+}
+
+.search-form__submit-button:hover {
+  text-decoration: underline;
+}
+
+.search-form__submit-button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.preloader-template {
+  position: absolute;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+.search-form__checkbox {
+  cursor: pointer; 
+}
+
+.search-form__checkbox-list {
+  display: flex; 
+  align-items: center; 
+  gap: 17px; 
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff; 
+  position: relative; 
+  margin-right: 5px; 
+  cursor: pointer; 
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 1.5px; 
+  left: 1.5px; 
+  width: 14.5px;
+  height: 14.5px;
+  background-color: #fff;
 }
