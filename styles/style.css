@@ -212,6 +212,7 @@ ol {
   border: 1px solid white;
   width: 194px;
   height: 34px;
+  cursor: pointer;
 }
 
 .more-button {
@@ -224,16 +225,16 @@ button:active {
 }
 
 button:hover {
-  text-decoration: underline;
+  text-decoration: underline 1px #fff;
+}
+
+button:focus {
+  outline: none;
 }
 
 button:focus-visible {
   outline: 1px #fff;
   outline-offset: 1px;
-}
-
-.search-form__submit-button {
-  cursor: pointer;
 }
 
 .search-form__submit-button:active {
@@ -250,7 +251,7 @@ button:focus-visible {
 }
 
 .preloader-template {
-  position: fixed;
+  position: absolute;
   object-fit: cover;
 }
 
