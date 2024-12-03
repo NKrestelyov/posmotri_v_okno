@@ -251,7 +251,6 @@ button:focus-visible {
 }
 
 .preloader-template {
-  position: absolute;
   object-fit: cover;
 }
 
