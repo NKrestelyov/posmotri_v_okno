@@ -278,7 +278,6 @@ button:focus-visible {
   width: 19px;
   height: 19px;
   border: 1px solid #fff; 
-  position: relative; 
   margin-right: 5px; 
   cursor: pointer; 
 }
@@ -289,10 +288,10 @@ button:focus-visible {
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
-  top: 1.5px; 
-  left: 1.5px; 
-  width: 14.5px;
-  height: 14.5px;
+  display: block;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
 }
