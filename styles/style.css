@@ -45,6 +45,7 @@ ol {
   font-size: 75px;
   text-transform: uppercase;
   line-height: 70.5px;
+  padding-bottom: 30px;
 }
 
 .content__accent {
@@ -72,11 +73,8 @@ ol {
 }
 
 .content__list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   width: 399px;
-  height: 318px;
+  height: 292px;
   overflow-y: scroll;
   position: relative;
 }
@@ -84,6 +82,10 @@ ol {
 .content__list::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+.content__list-item {
+  margin-bottom: 30px;
 }
 
 .content__video-card {
@@ -171,6 +173,11 @@ ol {
   cursor: pointer;
 }
 
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid white;
+  outline-offset: 1px;
+} 
+
 .search-form__textfield {
   background-color: #1B1919;
   border-width: 1px 0px 1px 0px;
@@ -183,11 +190,6 @@ ol {
   appearance: none;
   min-width: 225px;
   outline: none;
-}
-
-.search-form__textfield:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
 }
 
 .search-form__fieldset-title {
@@ -210,15 +212,15 @@ ol {
   cursor: pointer;
 }
 
-.more-button:active {
+button:active {
   background-color: #545050;
 }
 
-.more-button:hover {
+button:hover {
   text-decoration: underline;
 }
 
-.more-button:focus-visible {
+button:focus-visible {
   outline: 1px #fff;
   outline-offset: 1px;
 }
