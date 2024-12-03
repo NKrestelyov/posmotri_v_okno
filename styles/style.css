@@ -68,8 +68,14 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
   color: #fff;
+}
+
+.content__card-link:focus-visible {
+  display: block;
+  outline: 1px solid white;
 }
 
 .content__list {
@@ -110,6 +116,7 @@ ol {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
+  padding-bottom: 6px;
   color: #fff;
 }
 
@@ -243,7 +250,7 @@ button:focus-visible {
 }
 
 .preloader-template {
-  position: absolute;
+  position: fixed;
   object-fit: cover;
 }
 
